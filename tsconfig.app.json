@@ -26,7 +26,8 @@
 		"paths": {
 			"@/*": ["src/*"],
 			"@providers/*": ["src/presentation/providers/*"],
-			"@routes/*": ["src/routes/*"]
+			"@routes/*": ["src/routes/*"],
+			"@pages/*": ["src/presentation/pages/*"]
 		}
 	},
 	"include": ["src"]
