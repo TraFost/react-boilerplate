@@ -8,8 +8,6 @@ const createRoute = (path: RoutePath, component: JSX.Element) => ({
   component,
 });
 
-const privateRoutes = [createRoute(RoutePath.HOME, <div>Homwe</div>)];
+export const privateRoutes = [createRoute(RoutePath.HOME, <div>Homwe</div>)];
 
-const publicRoutes = [createRoute(RoutePath.LOGIN, <div>Login</div>)];
-
-export { privateRoutes, publicRoutes };
+export const publicRoutes = [createRoute(RoutePath.LOGIN, <div>Login</div>)];

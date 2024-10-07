@@ -1,11 +1,13 @@
 import _React from "react";
 
-import { RouteProvider, StoreProvider } from "@providers/index";
+import { NextUiProvider, RouteProvider, StoreProvider } from "@providers/index";
 
 export default function App() {
   return (
     <StoreProvider>
-      <RouteProvider />
+      <NextUiProvider>
+        <RouteProvider />
+      </NextUiProvider>
     </StoreProvider>
   );
 }

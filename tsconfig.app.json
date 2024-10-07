@@ -29,5 +29,5 @@
 			"@routes/*": ["src/routes/*"]
 		}
 	},
-	"include": ["src", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.tsx"]
+	"include": ["src"]
 }
