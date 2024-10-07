@@ -25,12 +25,9 @@
 		"baseUrl": "./",
 		"paths": {
 			"@/*": ["src/*"],
-			"@components/*": ["src/presentation/components/*"],
-			"@hooks/*": ["src/presentation/hooks/*"],
-			"@pages/*": ["src/presentation/pages/*"],
-			"@layouts/*": ["src/presentation/layouts/*"],
-			"@providers/*": ["src/presentation/providers/*"]
+			"@providers/*": ["src/presentation/providers/*"],
+			"@routes/*": ["src/routes/*"]
 		}
 	},
-	"include": ["src"]
+	"include": ["src", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.tsx"]
 }
