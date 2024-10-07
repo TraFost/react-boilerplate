@@ -1,9 +1,11 @@
 import React from "react";
 
-function App() {
-	const [_state, _setState] = React.useState(0);
+import StoreProvider from "@providers/store-provider";
 
-	return <></>;
+export default function App() {
+  return (
+    <StoreProvider>
+      <div>App</div>
+    </StoreProvider>
+  );
 }
-
-export default App;
