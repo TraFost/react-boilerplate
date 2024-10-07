@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# React SOLID Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React template that uses TypeScript, Vite, and Biome. With SOLID principles in mind, this template is designed to be scalable and maintainable.
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+git clone https://github.com/TraFost/react-boilerplate.git
 
-## Expanding the ESLint configuration
+cd react-boilerplate
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+npm install / yarn install / pnpm install
+npm run dev / yarn dev / pnpm dev
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React
+- TypeScript
+- Vite
+- Biome
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Why Biome?
+
+Biome offers a lot of features rather than Eslint and Prettier. It is a powerful tool that can help you to maintain your codebase clean and consistent. It is a great tool for enforcing code quality and consistency in your project. it offers a lot of features like:
+
+- Git hooks
+- Continuous Integration
+- Code Quality
+- Code Consistency
+- Code Formatting
+- Faster Builds Process
+- And many more
+
+## Acknowledgments
+
+Special shoutout to [SeanLuis](https://github.com/SeanLuis) for inspiring the clean architecture and SOLID principles incorporated into this template.
