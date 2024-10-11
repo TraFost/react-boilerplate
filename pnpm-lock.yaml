@@ -14,12 +14,12 @@ importers:
       axios:
         specifier: ^1.7.7
         version: 1.7.7
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       framer-motion:
         specifier: ^11.11.1
         version: 11.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      lucide-react:
-        specifier: ^0.447.0
-        version: 0.447.0(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -32,10 +32,16 @@ importers:
       react-router-dom:
         specifier: ^6.26.2
         version: 6.26.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tailwind-merge:
+        specifier: ^2.5.3
+        version: 2.5.3
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.3
         version: 1.9.3
+      '@iconify/react':
+        specifier: ^5.0.2
+        version: 5.0.2(react@18.3.1)
       '@types/node':
         specifier: ^22.7.4
         version: 22.7.4
@@ -429,6 +435,14 @@ packages:
   '@humanwhocodes/retry@0.3.1':
     resolution: {integrity: sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA==}
     engines: {node: '>=18.18'}
+
+  '@iconify/react@5.0.2':
+    resolution: {integrity: sha512-wtmstbYlEbo4NDxFxBJkhkf9gJBDqMGr7FaqLrAUMneRV3Z+fVHLJjOhWbkAF8xDQNFC/wcTYdrWo1lnRhmagQ==}
+    peerDependencies:
+      react: '>=16'
+
+  '@iconify/types@2.0.0':
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@internationalized/date@3.5.6':
     resolution: {integrity: sha512-jLxQjefH9VI5P9UQuqB6qNKnvFt1Ky1TPIzHGsIlCi7sZZoMR8SdYbBGRvM0y+Jtb+ez4ieBzmiAUcpmPYpyOw==}
@@ -2314,11 +2328,6 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@0.447.0:
-    resolution: {integrity: sha512-SZ//hQmvi+kDKrNepArVkYK7/jfeZ5uFNEnYmd45RKZcbGD78KLnrcNXmgeg6m+xNHFvTG+CblszXCy4n6DN4w==}
-    peerDependencies:
-      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
-
   match-sorter@6.3.4:
     resolution: {integrity: sha512-jfZW7cWS5y/1xswZo8VBOdudUiSd9nifYRWphc9M5D/ee4w4AoXLgBEdRbgVaxbMuagBPeUC5y2Hi8DO6o9aDg==}
 
@@ -2687,6 +2696,9 @@ packages:
 
   tailwind-merge@1.14.0:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
+
+  tailwind-merge@2.5.3:
+    resolution: {integrity: sha512-d9ZolCAIzom1nf/5p4LdD5zvjmgSxY0BGgdSvmXIoMYAiPdAW/dSpP7joCDYFY7r/HkEa2qmPtkgsu0xjQeQtw==}
 
   tailwind-variants@0.1.20:
     resolution: {integrity: sha512-AMh7x313t/V+eTySKB0Dal08RHY7ggYK0MSn/ad8wKWOrDUIzyiWNayRUm2PIJ4VRkvRnfNuyRuKbLV3EN+ewQ==}
@@ -3185,6 +3197,13 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.1': {}
+
+  '@iconify/react@5.0.2(react@18.3.1)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 18.3.1
+
+  '@iconify/types@2.0.0': {}
 
   '@internationalized/date@3.5.6':
     dependencies:
@@ -5929,10 +5948,6 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@0.447.0(react@18.3.1):
-    dependencies:
-      react: 18.3.1
-
   match-sorter@6.3.4:
     dependencies:
       '@babel/runtime': 7.25.7
@@ -6275,6 +6290,8 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwind-merge@1.14.0: {}
+
+  tailwind-merge@2.5.3: {}
 
   tailwind-variants@0.1.20(tailwindcss@3.4.13):
     dependencies:

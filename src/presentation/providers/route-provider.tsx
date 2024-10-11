@@ -1,6 +1,7 @@
 import _React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import { Notfound } from "@/presentation/pages";
 import { privateRoutes, publicRoutes } from "@routes/app-router";
 import ProtectedRoutes from "@routes/protected-routes";
 
@@ -18,7 +19,7 @@ export default function RouteProvider() {
           ))}
         </Route>
 
-        <Route path="*" element={<div>Not Found</div>} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
     </Router>
   );

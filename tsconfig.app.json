@@ -27,7 +27,9 @@
 			"@/*": ["src/*"],
 			"@providers/*": ["src/presentation/providers/*"],
 			"@routes/*": ["src/routes/*"],
-			"@pages/*": ["src/presentation/pages/*"]
+			"@pages/*": ["src/presentation/pages/*"],
+			"@components/*": ["src/presentation/components/*"],
+			"@utils/*": ["src/utils/*"]
 		}
 	},
 	"include": ["src"]
