@@ -1,4 +1,4 @@
-import { Login } from "@/presentation/pages";
+import { Home, Login } from "@/presentation/pages";
 
 export enum RoutePath {
   HOME = "/",
@@ -10,6 +10,6 @@ const createRoute = (path: RoutePath, component: JSX.Element) => ({
   component,
 });
 
-export const privateRoutes = [createRoute(RoutePath.HOME, <div>Home</div>)];
+export const privateRoutes = [createRoute(RoutePath.HOME, <Home />)];
 
 export const publicRoutes = [createRoute(RoutePath.LOGIN, <Login />)];

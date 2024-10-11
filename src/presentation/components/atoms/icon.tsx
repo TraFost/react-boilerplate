@@ -1,10 +1,11 @@
 import { Icon, type IconProps } from "@iconify/react";
-import React from "react";
+import _React from "react";
 
 interface IconCompProps extends Omit<IconProps, "icon"> {
-  icon: string;
+  name: string;
+  size?: number;
 }
 
-export default function IconComp({ icon, ...props }: IconCompProps) {
-  return <Icon icon={icon} {...props} />;
+export default function IconComp({ name, size = 30, ...props }: IconCompProps) {
+  return <Icon icon={name} fontSize={size} {...props} />;
 }
