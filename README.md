@@ -1,6 +1,6 @@
 # React SOLID Boilerplate
 
-This is a React template that uses TypeScript, Vite, and Biome. With SOLID principles in mind, this template is designed to be scalable and maintainable.
+A React boilerplate with SOLID principles and Clean Architecture. This boilerplate is built with Vite, TypeScript, Biome, LeftHook, Next-UI, Axios, and React-Query. It is a great starting point for your next React project. Made with ❤️ by [Rahman N](https://www.linkedin.com/in/rahmannrdn/).
 
 ## Usage
 
@@ -16,10 +16,15 @@ npm run dev / yarn dev / pnpm dev
 
 ## Features
 
-- React
-- TypeScript
-- Vite
+- React (Vite & TS)
 - Biome
+- LeftHook (Git Hooks)
+- Next-UI
+- Axios
+- React-Query
+- Reusable Components
+- SOLID Principles
+- Clean Architecture
 
 ## Why Biome?
 
