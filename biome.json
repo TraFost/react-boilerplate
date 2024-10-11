@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": [],
+    "ignore": ["vercel.json"],
     "include": ["src/**/*"]
   },
   "formatter": {
